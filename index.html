@@ -1,38 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <p id="demo"></p>
-        <h2>switch statement</h2>
-        <script>
-            var day;
-           
-            switch (new Date().getDay()) {
-                case 0:
-                    day = "Today is Sunday";
-                break;
-                case 1:
-                    day = "Today is Monday";
-                break;
-                case 2:
-                    day = "Today is Tuesday";
-                break;
-                case 3:
-                    day = "Today is Wednesday";
-                break;
-                case 4:
-                    day = "Today is Thursday";
-                break;
-                case 5:
-                    day  = "Today is Friday";
-                break;
-                case 6:
-                    day = "Today is Saturday";
-                break;
-                default:
-                    day = "Error!";
-            }
-            document.getElementById("demo").innerHTML = day;
-        </script>
 
-    </body>
+<body>
+    <h2>JavaScript String Methods and Loops</h2>
+    <p>Numbers form 1 to 10</p>
+    <p id="result"></p>
+    <script>
+        var number = "";
+        for (i = 1; i < 11; i++) {
+            number += "<br> ";
+        }
+        document.write("the random numbers are: " + Math.floor(Math.random() * 100) );
+        var date = new Date();
+            document.write("Today's Date is " + date.getDate());
+    </script>
+</body>
+
 </html>
